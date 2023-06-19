@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    min-width: 1200px;
+    padding: 0 20px;
+    margin: 10px auto; 
+    position: relative;
+}
+
+.add button {
+    width: 200px;
+    height: 50px;
+    font-size: 19px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.add button:hover{
+    opacity: 0.7;
+}
+
+.filter {
+    margin: 20px;
+    display: flex;
+    /* flex-wrap: nowrap; */
+}
+.filter form {
+    display: flex;
+    justify-content: center;
+}
+.filter p {
+    margin: 10px;
+    font-size: 18px;
+}
+.filter input {
+    border: 2px solid whitesmoke;
+    padding: 0 0px 0 10px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+.filter button {
+    margin-left: 10px;
+    width: 118px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.filter button:hover{
+    opacity: 0.7;
+}
+
+
+hr {
+    margin: 10px 0 ;
+    border: 1px solid whitesmoke;
+}
+.products {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 15px
+}
+.item {
+    width: 200px;
+    height: 88px;
+    border: 2px solid #e7e7e7d9;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+.item .name {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+}
+.item .cost {
+    font-weight: 600;
+    color: blue;
+}
+
+/* .add_box {
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+    background: black;
+    right: 0px;
+    top: 0;
+
+    display: none;
+    transition: 500ms;
+} */
+.add_box {
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+    background: black;
+    right: 0;
+    top: 0;
+
+    opacity: 0; 
+    transition: opacity 500ms;
+}
+
+.add_box.show {
+    opacity: 1;
+}
+.add_form {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 30vh  auto;
+}
+.add_form p {
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+}
+.add_form input {
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+.add_form button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 10px 0 10px 0;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
